@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/topup.toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="48dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/topup.tv.value"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@color/darkred"
+                    android:gravity="center"
+                    android:text="Rp 0"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/topup.tv.50000"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_weight="0.25"
+                                android:background="@drawable/add_menu_border_set"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="50.000"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/topup.tv.100000"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_weight="0.25"
+                                android:background="@drawable/add_menu_border_set"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="100.000"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/topup.tv.150000"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_weight="0.25"
+                                android:background="@drawable/add_menu_border_set"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="150.000"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/topup.tv.200000"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_weight="0.25"
+                                android:background="@drawable/add_menu_border_set"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="200.000"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/topup.et.input"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:backgroundTint="@color/black"
+                            android:hint="or input your nominal here"
+                            android:inputType="number"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Paying Method" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/topup.iv.bca"
+                                android:layout_width="120dp"
+                                android:layout_height="60dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="0.25"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/bank_bca" />
+
+                            <ImageView
+                                android:id="@+id/topup.iv.permata"
+                                android:layout_width="120dp"
+                                android:layout_height="60dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="0.25"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/bank_permata" />
+
+                            <ImageView
+                                android:id="@+id/topup.iv.mandiri"
+                                android:layout_width="120dp"
+                                android:layout_height="60dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="0.25"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/bank_mandiri" />
+
+                            <ImageView
+                                android:id="@+id/topup.iv.maybank"
+                                android:layout_width="120dp"
+                                android:layout_height="60dp"
+                                android:layout_weight="0.25"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/maybank" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/topup.tv.accountnumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:backgroundTint="@color/black"
+                            android:hint="Input your account here"
+                            android:inputType="number"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/topup.btn.topup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkred"
+                android:padding="10dp"
+                android:text="TOP UP"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

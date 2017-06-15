@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/home_backgroundColor"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:columnCount="4"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:rowCount="1"
+            android:useDefaultMargins="true">
+
+            <LinearLayout
+                android:id="@+id/home.nearme"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:background="@drawable/cardview_effect"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:src="@drawable/ic_location"
+                    android:tint="@color/darkred"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="Near Me"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home.24hours"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:background="@drawable/cardview_effect"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:src="@drawable/ic_24hours" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="24 Hours"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home.bestseller"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:background="@drawable/cardview_effect"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:src="@drawable/ic_best_seller" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="Best Sellers"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home.new"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:background="@drawable/cardview_effect"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:src="@drawable/ic_new" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="New"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/home.viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"></android.support.v4.view.ViewPager>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/fav_meals" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bottom_navigation_border_set"
+            android:padding="5dp">
+
+            <TableRow
+                android:id="@+id/homeTable.row1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/home.healthy.category"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="60dp"
+                        android:layout_column="1"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/corner_radius_set"
+                        android:foreground="@drawable/darker_background_food_category"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/healthy_food" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Healthy"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/home.anekaNasi.category"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="60dp"
+                        android:layout_column="1"
+                        android:layout_marginTop="4dp"
+                        android:foreground="@drawable/darker_background_food_category"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/aneka_nasi" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Aneka Nasi"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/home.ayamBebek.category"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="60dp"
+                        android:layout_column="1"
+                        android:layout_marginTop="4dp"
+                        android:foreground="@drawable/darker_background_food_category"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ayam_dan_bebek" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Aneka Ayam &amp; Bebek"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/homeTable.row2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/home.snackJajanan.category"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="60dp"
+                        android:layout_column="1"
+                        android:layout_marginTop="4dp"
+                        android:foreground="@drawable/darker_background_food_category"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/snack_dan_jajanan" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Snack"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/home.minuman.category"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="60dp"
+                        android:layout_column="1"
+                        android:layout_marginTop="4dp"
+                        android:foreground="@drawable/darker_background_food_category"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/drink" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Minuman"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/home.fastfood.category"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="60dp"
+                        android:layout_column="1"
+                        android:layout_marginTop="4dp"
+                        android:foreground="@drawable/darker_background_food_category"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/fast_food" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Fastfood"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/homeTable.row3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/home.japanese.category"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="60dp"
+                        android:layout_column="1"
+                        android:layout_marginTop="4dp"
+                        android:foreground="@drawable/darker_background_food_category"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/japanese_food" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Japanese"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/home.korean.category"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="60dp"
+                        android:layout_column="1"
+                        android:layout_marginTop="4dp"
+                        android:foreground="@drawable/darker_background_food_category"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/korean_food" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Korean"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/home.roti.category"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="60dp"
+                        android:layout_column="1"
+                        android:layout_marginTop="4dp"
+                        android:foreground="@drawable/darker_background_food_category"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bread" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Roti"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/homeTable.row4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/home.seafood.category"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="60dp"
+                        android:layout_column="1"
+                        android:layout_marginTop="4dp"
+                        android:foreground="@drawable/darker_background_food_category"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/seafood" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Seafood"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/home.chinese.category"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="60dp"
+                        android:layout_column="1"
+                        android:layout_marginTop="4dp"
+                        android:foreground="@drawable/darker_background_food_category"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/chinese_food" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Chinese"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/home.martabak.category"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="60dp"
+                        android:layout_column="1"
+                        android:layout_marginTop="4dp"
+                        android:foreground="@drawable/darker_background_food_category"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/martabak" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Martabak"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </FrameLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

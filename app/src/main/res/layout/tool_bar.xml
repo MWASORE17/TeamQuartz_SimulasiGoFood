@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar.fragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:paddingRight="15dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <android.support.percent.PercentFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/toolbar.title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="" />
+
+
+            <ImageView
+                android:id="@+id/toolbar.iv.historyorder"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_history"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageView
+                android:id="@+id/toolbar.iv.accounticon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_weight="0.5"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_account" />
+
+        </android.support.percent.PercentFrameLayout>
+
+    </android.support.v7.widget.Toolbar>
+</LinearLayout>

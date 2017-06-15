@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">GoFood Simulation</string>
+    <string name="home.btn_near_me">Near Me</string>
+    <string name="home.btn_24_hours">24 Hours</string>
+    <string name="home.btn_best_sellers">Best Sellers</string>
+    <string name="home.btn_new">New</string>
+    <string name="fav_meals">CHOOSE YOUR FAVOURITE TYPES OF MEALS</string>
+    <string name="points">Points</string>
+    <string name="go_pay_deposit">GoPay Deposit</string>
+    <string name="phone">Phone</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+
+    <!--USED ONCE-->
+    <string name="have_account">Already have an account? Login Now !!!</string>
+    <string name="no_account">No account yet? Register Now !!!</string>
+    <string name="retype_password">Retype Password</string>
+    <string name="search_hint">What do you want to eat?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="order_more">I Want to Order More</string>
+    <string name="address_here">ADDRESS HERE</string>
+    <string name="order">Order</string>
+    <string name="price_per_item">Price per item</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="status">Status</string>
+
+    <string name="vertical_ellipsis">&#8942;</string>
+    <string name="title_activity_three_dots_fragment">Map</string>
+    <string name="startUsingGOFOOD"><![CDATA[ <p>Let`s start using <b><font color="red">GO-FOOD</font></b>!<p>]]> </string>
+    <string name="thankYouGOFOOD"><![CDATA[ <p>Thank You for using <b><font color="red">GO-FOOD</font></b>!<p>]]> </string>
+</resources>

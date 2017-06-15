@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/sellermenu.cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/sellermenu.iv.image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ico_gofood" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/sellermenu.tv.name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|top"
+                    android:text="Menu`s Name"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sellermenu.tv.price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|bottom"
+                    android:text="Price"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|bottom"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/sellermenu.btn.subtract"
+                        android:layout_width="30dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/seller_page_minus_style"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/sellermenu.tv.quantity"
+                        android:layout_width="40dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/add_menu_border_set"
+                        android:gravity="center"
+                        android:text="0" />
+
+                    <Button
+                        android:id="@+id/sellermenu.btn.add"
+                        android:layout_width="30dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/seller_page_plus_style"
+                        android:text="+" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

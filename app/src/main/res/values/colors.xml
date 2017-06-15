@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#4DB6AC</color>
+    <color name="home_backgroundColor">#DBDBDB</color>
+    <color name="Login_Register_backgroundColor">#474747</color>
+    <color name="white">#fff</color>
+    <color name="gray">#ccc</color>
+    <color name="black">#000</color>
+    <color name="darkred">#ba2c2c</color>
+    <color name="red">#f00</color>
+    <color name="green">#11d843</color>
+    <color name ="orange">#ff6100</color>
+    <color name="blue">#2678e2</color>
+    <color name="darkgray">#393738</color>
+</resources>
